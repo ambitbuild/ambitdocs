@@ -43,11 +43,14 @@ Once you have downloaded the agent binary for the architecture that you require,
 Configuring the agent
 ----------------
 
-The agent will look for a config file at /etc/ambitsentry/config.yaml by default.
+. note::
+
+   The agent will look for a config file at /etc/ambitsentry/config.yaml by default.
 
 An example config file is
 
 .. code-block:: console
+   
    crypt:
       hmackeyb64: "EtWX3tULHQViiTLDoyLBoVmmnpltdkwpJF4qH0Uo8Gw="
       aeskeyb64: "sEAhWAQGDVJoM3JJmSxgXhdEUUvlaMdTp+oqmbYMWnk="
