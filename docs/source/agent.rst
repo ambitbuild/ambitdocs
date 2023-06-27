@@ -47,7 +47,7 @@ The agent will look for a config file at /etc/ambitsentry/config.yaml by default
 
 An example config file is
 
-.. highlight:: yaml
+.. code-block:: console
       crypt:
          hmackeyb64: "EtWX3tULHQViiTLDoyLBoVmmnpltdkwpJF4qH0Uo8Gw="
          aeskeyb64: "sEAhWAQGDVJoM3JJmSxgXhdEUUvlaMdTp+oqmbYMWnk="
