@@ -43,7 +43,7 @@ Once you have downloaded the agent binary for the architecture that you require,
 Configuring the agent
 ----------------
 
-. note::
+.. note::
 
    The agent will look for a config file at /etc/ambitsentry/config.yaml by default.
 
@@ -55,7 +55,7 @@ An example config file is
       hmackeyb64: "EtWX3tULHQViiTLDoyLBoVmmnpltdkwpJF4qH0Uo8Gw="
       aeskeyb64: "sEAhWAQGDVJoM3JJmSxgXhdEUUvlaMdTp+oqmbYMWnk="
    ambitlog:
-      logfile: "/root/ambitagent.log"
+      logfile: "/var/log/ambitagent.log"
       loglevel: "DEBUG"
    network:
       udpauthport: 34000
@@ -68,9 +68,9 @@ An example config file is
       removerulesonstop: "false"
       ingressauthport: 34000
    apiservice:
-      apiservicecertpath: "/root/cert.pem"
-      apiservicekeypath: "/root/key.pem"
-      apiserviceclientcertspath: "/root/tarcapcert.pem"
+      apiservicecertpath: "/etc/ambitsentry/cert.pem"
+      apiservicekeypath: "/etc/ambitsentry/key.pem"
+      apiserviceclientcertspath: "/etc/ambitsentry/tarcapcert.pem"
       apiservicebindip: "10.131.0.2"
       apiservicebindport: 8000
    insights:
