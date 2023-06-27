@@ -47,34 +47,34 @@ The agent will look for a config file at /etc/ambitsentry/config.yaml by default
 
 An example config file is
 
-.. code-block:: console
-   crypt:
-      hmackeyb64: "EtWX3tULHQViiTLDoyLBoVmmnpltdkwpJF4qH0Uo8Gw="
-      aeskeyb64: "sEAhWAQGDVJoM3JJmSxgXhdEUUvlaMdTp+oqmbYMWnk="
-   ambitlog:
-      logfile: "/root/ambitagent.log"
-      loglevel: "DEBUG"
-   network:
-      udpauthport: 34000
-      udpauthdev: "eth0"
-      fwmodule:
-   fwmodule: "iptables"
-      chainname: "AMBIT"
-      purgechainonstop: "true"
-      awssecgroupid: "aw23as34de3"
-      removerulesonstop: "false"
-      ingressauthport: 34000
-   apiservice:
-      apiservicecertpath: "/root/cert.pem"
-      apiservicekeypath: "/root/key.pem"
-      apiserviceclientcertspath: "/root/tarcapcert.pem"
-      apiservicebindip: "10.131.0.2"
-      apiservicebindport: 8000
-   insights:
-      capdev: "eth0"
-   messaging:
-      zmqbindaddress: "*"
-      zmqbindport: 5757
-      zmqauthdomain: "*"
-      zmqauthiplist: "127.0.0.1/8"
+.. highlight:: yaml
+      crypt:
+         hmackeyb64: "EtWX3tULHQViiTLDoyLBoVmmnpltdkwpJF4qH0Uo8Gw="
+         aeskeyb64: "sEAhWAQGDVJoM3JJmSxgXhdEUUvlaMdTp+oqmbYMWnk="
+      ambitlog:
+         logfile: "/root/ambitagent.log"
+         loglevel: "DEBUG"
+      network:
+         udpauthport: 34000
+         udpauthdev: "eth0"
+         fwmodule:
+      fwmodule: "iptables"
+         chainname: "AMBIT"
+         purgechainonstop: "true"
+         awssecgroupid: "aw23as34de3"
+         removerulesonstop: "false"
+         ingressauthport: 34000
+      apiservice:
+         apiservicecertpath: "/root/cert.pem"
+         apiservicekeypath: "/root/key.pem"
+         apiserviceclientcertspath: "/root/tarcapcert.pem"
+         apiservicebindip: "10.131.0.2"
+         apiservicebindport: 8000
+      insights:
+         capdev: "eth0"
+      messaging:
+         zmqbindaddress: "*"
+         zmqbindport: 5757
+         zmqauthdomain: "*"
+         zmqauthiplist: "127.0.0.1/8"
 
