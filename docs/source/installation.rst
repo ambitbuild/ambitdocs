@@ -1,7 +1,7 @@
-API
+Installation
 ===
 
 .. autosummary::
    :toctree: generated
 
-   ambitdocs
+   agentinstallation
