@@ -23,6 +23,7 @@ Contents
 
 .. toctree::
 
-   agent
+   ambitagent
+   ambitclient
    insights
    amc
