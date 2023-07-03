@@ -5,14 +5,11 @@ Ambit Agent
 
 The Ambit Agent is core to the Ambit Framework. It is the component that is installed on the endpoint itself.
 
-.. toctree::
-   agent-ubuntu
-
 
 Prerequisites
 -------------
 
-The following are dependencies that need to be installed for ambit-agent
+The following are dependencies that need to be installed for ambit-agent on Ubuntu 22.04
 
 .. code-block:: console
 
@@ -24,7 +21,7 @@ Installation
 
 Agent Installation:
 
-Once you have downloaded the agent binary for the architecture that you require, copy it to a directory of your choice (default is /usr/local/share/ambit-agent).
+Once you have downloaded the agent binary for the architecture and distro that you require, copy it to a directory of your choice (default is /usr/local/share/ambit-agent).
 
 .. code-block:: console
 
