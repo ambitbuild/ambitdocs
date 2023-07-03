@@ -1,39 +1,31 @@
-Ambit Agent
+Ambit Client
 =====
 
-.. _agent:
-
-The Ambit Agent is core to the Ambit Framework. It is the component that is installed on the endpoint itself.
-
+.. _ambitclient:
 
 Prerequisites
 -------------
 
-The following are dependencies that need to be installed for ambit-agent on Ubuntu 22.04
-
-.. code-block:: console
-
-   $ sudo apt-get install libzmq5 libgcrypt20 libpcap0.8
-   
+There are no prerequisites for the client on Ubuntu 22.04
 
 Installation
 ------------
 
-Agent Installation:
+Client Installation:
 
-Once you have downloaded the agent binary for the architecture and distro that you require, copy it to a directory of your choice (default is /usr/local/share/ambit-agent).
+Once you have downloaded the client binary for the architecture that you require, copy it to a directory of your choice (default is /usr/local/share/ambit-agent).
 
 .. code-block:: console
 
-   $ cp ambit-agent /usr/local/share/
+   $ cp ambit-client /usr/local/share/
 
 
-Configuring the agent
+Configuring the client
 ----------------
 
 .. note::
 
-   The agent will look for a config file at /etc/ambitsentry/config.yaml by default.
+   The client will look for a config file at /etc/ambitsentry/config.yaml by default.
 
 An example config file is
 
