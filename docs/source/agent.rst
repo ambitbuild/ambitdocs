@@ -5,6 +5,10 @@ Ambit Agent
 
 The Ambit Agent is core to the Ambit Framework. It is the component that is installed on the endpoint itself.
 
+.. toctree::
+   agent-ubuntu
+
+
 Prerequisites
 -------------
 
@@ -12,21 +16,8 @@ The following are dependencies that need to be installed for ambit-agent
 
 .. code-block:: console
 
-   $ sudo apt-get install libzmq3-dev libzmq5 libgcrypt20 libgcrypt20-dev
+   $ sudo apt-get install libzmq5 libgcrypt20 libpcap0.8
    
-
-The nDPI framework also needs to be installed
-
-.. code-block:: console
-
-   $ git clone https://github.com/ntop/nDPI.git
-   $ cd nDPI/
-   $ git checkout 4.4-stable
-   $ sudo apt-get install build-essential git gettext flex bison libtool autoconf automake pkg-config libpcap-dev libjson-c-dev libnuma-dev libpcre2-dev libmaxminddb-dev librrd-dev
-   $ ./autogen.sh --with-only-libndpi
-   $ make
-   $ make install
-
 
 Installation
 ------------
