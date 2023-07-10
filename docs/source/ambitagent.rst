@@ -52,9 +52,9 @@ The key value pairs are as follows :
 
 .. code-block:: console
 
-   crypt:
+   ``crypt:
       hmackeyb64: "EtWX3tULHQViiTLDoyLBoVmmnpltdkwpJF4qH0Uo8Gw="
-      aeskeyb64: "sEAhWAQGDVJoM3JJmSxgXhdEUUvlaMdTp+oqmbYMWnk="
+      aeskeyb64: "sEAhWAQGDVJoM3JJmSxgXhdEUUvlaMdTp+oqmbYMWnk="``
 
 The crypt section defines the AES key and the HMAC key that the agent and client will have in common.
 The keys on the client MUST match the keys on the agent.
