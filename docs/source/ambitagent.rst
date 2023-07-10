@@ -13,7 +13,9 @@ Prerequisites
 The prerequisites that are required by ambit-agent are :
 
 Zero MQ
+
 LGPL Crypto library
+
 PCAP - System interface for user-level packet capture
 
 .. note::
@@ -49,6 +51,7 @@ The configuration of the agent is defined in a yaml file.
 The key value pairs are as follows :
 
 .. code-block:: console
+
    crypt:
       hmackeyb64: "EtWX3tULHQViiTLDoyLBoVmmnpltdkwpJF4qH0Uo8Gw="
       aeskeyb64: "sEAhWAQGDVJoM3JJmSxgXhdEUUvlaMdTp+oqmbYMWnk="
@@ -59,7 +62,8 @@ The keys on the client MUST match the keys on the agent.
 To generate a set of random keys you can use the following :
 
 .. code-block:: console
-   ambitagent --action genkeys
+
+   $ ambitagent --action genkeys
    Generating random HMAC and AES keys...                                                                                                                                                                             
 
    HMAC - 41jcSpTGAM90nsBgbSM4DsChpc/I40D1/PQM7J8NAGU=
