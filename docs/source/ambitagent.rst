@@ -48,7 +48,7 @@ Configuring the agent
 
 The configuration of the agent is defined in a yaml file.
 
-The yamle file sections are detailed below
+The yaml file sections are detailed below
 
 .. code-block:: console
 
@@ -57,6 +57,7 @@ The yamle file sections are detailed below
       aeskeyb64: "sEAhWAQGDVJoM3JJmSxgXhdEUUvlaMdTp+oqmbYMWnk="``
 
 The crypt section defines the AES key and the HMAC key that the agent and client will have in common.
+
 The keys on the client MUST match the keys on the agent.
 
 To generate a set of random keys you can use the following :
@@ -80,6 +81,7 @@ To generate a set of random keys you can use the following :
 The ambitlog section defines the logging configuration.
 
 logfile: is the file that the agent will log to. It can also be set to STDOUT. This will log to the standard out of the process.
+
 loglevel: is the level of logging. Possible values are DEBUG,INFO,WARN,ERROR
 
 .. code-block:: console
@@ -91,6 +93,7 @@ loglevel: is the level of logging. Possible values are DEBUG,INFO,WARN,ERROR
 The network section defines the network configuration.
 
 udpauthport: is is the UDP port that the agent will listen on for incoming client packets.
+
 udpauthdev: is the device/adaptor that the agent will listen on 
 
 .. code-block:: console
@@ -106,10 +109,15 @@ udpauthdev: is the device/adaptor that the agent will listen on
 The fwmodule section defines the firewall module configuration.
 
 fwmodule: is is the firewall module that the agent will use. Possible values are iptables and awssecuritygroups.
+
 chainname: is the iptables chain name that the agent will create for it's rules
+
 purgechainonstop: specifies whether or not the agent should purge the rules from the chain when the agent is stopped
+
 awssecgroupid: is the AWS Security Group ID that is to be managed
+
 removerulesonstop: specifies whether or not the agent must remove any rules it created in the security group when the agent is stopped.
+
 ingressauthport: is the port to allow for incoming client requests
 
 .. code-block:: console
@@ -123,8 +131,11 @@ ingressauthport: is the port to allow for incoming client requests
 The messaging section defines the messaging configuration for comunication between the agent and the AMC.
 
 zmqbindaddress: is is the address the ZMQ framework will bind to.
+
 zmqbindport: is is the port the ZMQ framework will bind to.
+
 zmqauthdomain: is is the authentication domain for the ZMQ framework
+
 zmqauthiplist: is is the list of ip addresses allowed to connect to the ZMQ module of the agent
 
 
