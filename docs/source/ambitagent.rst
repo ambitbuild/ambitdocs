@@ -74,6 +74,17 @@ To generate a set of random keys you can use the following :
 
 .. code-block:: console
 
+   ``license:
+      licensefilepath: "/etc/ambitsentry/company.license.pem"
+      
+The license section defines the license configuration.
+
+
+licensefilepath: is the location of the ambit sentry license file
+
+
+.. code-block:: console
+
    ``ambitlog:
       logfile: "/var/log/ambitagent.log"
       loglevel: "DEBUG"``
@@ -164,6 +175,8 @@ An example config file is
    crypt:
       hmackeyb64: "EtWX3tULHQViiTLDoyLBoVmmnpltdkwpJF4qH0Uo8Gw="
       aeskeyb64: "sEAhWAQGDVJoM3JJmSxgXhdEUUvlaMdTp+oqmbYMWnk="
+   license:
+      licensefilepath: "/etc/ambitsentry/company.license.pem"
    ambitlog:
       logfile: "/var/log/ambitagent.log"
       loglevel: "DEBUG"
@@ -185,3 +198,23 @@ An example config file is
       zmqauthdomain: "*"
       zmqauthiplist: "127.0.0.1/8"
 
+
+Starting the agent
+----------------
+
+.. note::
+
+   The user that starts the agent requires sufficient permissions. Particularly permissions to capture packets and modify the netfilter module via iptables.
+
+
+The agent can be started with no args if the config file is in the default location. 
+
+Alternatively the location of the config file may be specified as an argument.
+
+
+.. code-block:: console
+
+   $ sudo ./ambitagent -config ./agent.example.yaml
+
+
+The logs will indicate if the agent started successfully.
