@@ -23,6 +23,7 @@ Contents
 
 .. toctree::
 
+   notefromcreators
    ambitagent
    ambitclient
    insights
